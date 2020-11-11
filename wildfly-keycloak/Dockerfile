@@ -10,7 +10,7 @@ RUN cd $WILDFLY_HOME \
 && rm keycloak-wildfly-adapter-dist-${KEYCLOAK_VERSION}.zip \
 && bin/jboss-cli.sh --file=bin/adapter-elytron-install-offline.cli \
 # Admin-User anlegen
-&& bin/add-user.sh admin admin --silent \
+&& bin/add-user.sh admin admin1234 --silent \
 # Zu Vermeidung von Fehlermeldungen beim Start
 && rm -r standalone/configuration/standalone_xml_history/current/
 
