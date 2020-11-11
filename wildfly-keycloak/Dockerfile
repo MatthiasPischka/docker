@@ -1,7 +1,7 @@
-FROM jboss/wildfly:20.0.1.Final
+FROM jboss/wildfly:21.0.0.Final
 LABEL maintainer="Matthias Pischka, pischka-it.de" description="WildFly mit Keycloak Adapter"
 
-ENV KEYCLOAK_VERSION 11.0.2
+ENV KEYCLOAK_VERSION 11.0.3
 ENV WILDFLY_HOME /opt/jboss/wildfly
 
 RUN cd $WILDFLY_HOME \
