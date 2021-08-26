@@ -1,2 +1,4 @@
 /dockering.iml
 /.idea/
+/compositions/wildfly-mit-keycloak/tmp/hsperfdata_jboss/
+/compositions/wildfly-mit-keycloak/deployments/jsf2.3-keycloak.war.deployed
