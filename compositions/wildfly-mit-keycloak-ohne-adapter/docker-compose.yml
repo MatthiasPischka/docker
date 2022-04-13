@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  keycloak:
+    image: jboss/keycloak:16.1.1
+    ports:
+      - "8180:8080"
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin1234
+      KEYCLOAK_IMPORT: /tmp/Testrealm.json
+    volumes:
+      - ./tmp:/tmp
+
+  wildfly:
+    image: quay.io/wildfly/wildfly:26.0.1.Final
+    ports:
+      - "8080:8080"
+      - "9990:9990"
+    volumes:
+      - ./deployments:/opt/jboss/wildfly/standalone/deployments

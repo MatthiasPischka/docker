@@ -2,3 +2,7 @@
 /.idea/
 /compositions/wildfly-mit-keycloak/tmp/hsperfdata_jboss/
 /compositions/wildfly-mit-keycloak/deployments/jsf2.3-keycloak.war.deployed
+/compositions/wildfly-mit-keycloak-ohne-adapter/deployments/jsf2.3-keycloak-ohne-adapter.war.deployed
+/compositions/wildfly-mit-keycloak-ohne-adapter/tmp/hsperfdata_jboss/
+/compositions/wildfly-mit-keycloak-ohne-adapter/.idea/
+/compositions/wildfly-mit-keycloak/.idea/
